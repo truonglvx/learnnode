@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/truonglvx/learnnode#readme",
   "dependencies": {
-    "hapi": "^15.2.0"
+    "hapi": "^15.2.0",
+    "mqemitter": "^2.0.2",
+    "mqemitter-mongodb": "^3.0.1",
+    "mqemitter-redis": "^2.0.0",
+    "multines": "^0.1.2",
+    "nes": "^6.3.1"
   }
 }
