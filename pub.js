@@ -12,16 +12,22 @@ client.connect((err) => {
 
   console.log('connected')
 
-  client.request({
-    path: '/echo',
-    method: 'POST',
-    payload: { hello: 'world' }
-  }, (err) => {
-    if (err) {
-      console.error(err.message)
-      process.exit(1)
-    }
+  setInterval(() => {
 
-    client.disconnect()
-  })
+         client.request({
+            path: '/echo',
+            method: 'POST',
+            payload: { hello: 'world' }
+        }, (err) => {
+            if (err) {
+            console.error(err.message)
+            process.exit(1)
+            }
+
+            client.disconnect()
+        })
+        
+  }, 1000)
+
+ 
 })
