@@ -24,10 +24,10 @@ client.connect((err) => {
             process.exit(1)
             }
 
-            client.disconnect()
+            //client.disconnect()
         })
-        
-  }, 1000)
+
+  }, 100)
 
  
 })
