@@ -15,9 +15,9 @@ client.connect((err) => {
   setInterval(() => {
 
          client.request({
-            path: '/echo',
+            path: '/echo4',
             method: 'POST',
-            payload: { hello: 'world' }
+            payload: { hello: 'world 4' }
         }, (err) => {
             if (err) {
             console.error(err.message)
@@ -27,7 +27,7 @@ client.connect((err) => {
             //client.disconnect()
         })
 
-  }, 1000)
+  }, 100)
 
  
 })

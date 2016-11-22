@@ -12,7 +12,7 @@ client.connect((err) => {
 
   console.log('connected')
 
-  client.subscribe('/echo', (message) => {
+  client.subscribe('/echo1', (message) => {
     console.log(message)
   }, (err) => {
     if (err) {
