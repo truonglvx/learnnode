@@ -2,7 +2,7 @@
 
 const Nes = require('nes')
 
-const client = new Nes.Client('ws://localhost:8001')
+const client = new Nes.Client('ws://104.197.189.66:8001')
 
 client.connect((err) => {
   if (err) {
@@ -27,7 +27,7 @@ client.connect((err) => {
             //client.disconnect()
         })
 
-  }, 100)
+  }, 1000)
 
  
 })

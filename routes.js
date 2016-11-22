@@ -19,12 +19,12 @@ module.exports = (server) => {
     })
 
     server.subscriptionFar('/echo')
-    server.route({
-        path: '/echo',
-        method: 'POST',
+   
+     server.route({
+        path: '/',
+        method: 'GET',
         handler: (req, reply) => {
-            server.publishFar('/echo', req.payload)
-            reply(req.payload)
+            reply("hello buddy!!!")
         }
     })
 

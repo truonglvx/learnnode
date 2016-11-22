@@ -7,6 +7,15 @@ server.connection({ port: 8001 })
 
 require('./routes')(server)
 
+ server.route({
+        path: '/echo',
+        method: 'POST',
+        handler: (req, reply) => {
+            server.publishFar('/echo', req.payload)
+            reply(req.payload)
+        }
+    })
+
 server.start((err) => {
   if (err) {
     console.error(err.message)
